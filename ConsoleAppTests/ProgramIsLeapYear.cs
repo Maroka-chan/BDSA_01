@@ -9,7 +9,7 @@ namespace ConsoleAppTests
         [InlineData(400)]
         [InlineData(1600)]
         [InlineData(2000)]
-        public void Year_Is_LeapYear(int year) {
+        public void IsLeapYear_GivenLeapYear_ReturnsTrue(int year) {
             // Assert
             Assert.True(ConsoleApp.Program.IsLeapYear(year));
         }
@@ -20,7 +20,7 @@ namespace ConsoleAppTests
         [InlineData(1700)]
         [InlineData(1800)]
         [InlineData(1900)]
-        public void Year_Is_Not_LeapYear(int year) {
+        public void IsLeapYear_GivenNonLeapYear_ReturnsFalse(int year) {
             // Assert
             Assert.False(ConsoleApp.Program.IsLeapYear(year));
         }
