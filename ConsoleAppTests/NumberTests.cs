@@ -1,3 +1,4 @@
+using ConsoleApp;
 using Xunit;
 
 namespace ConsoleAppTests
@@ -11,7 +12,7 @@ namespace ConsoleAppTests
         [InlineData(2000)]
         public void IsLeapYear_GivenLeapYear_ReturnsTrue(int year) {
             // Assert
-            Assert.True(ConsoleApp.Program.IsLeapYear(year));
+            Assert.True(Number.IsLeapYear(year));
         }
 
         [Theory]
@@ -22,7 +23,7 @@ namespace ConsoleAppTests
         [InlineData(1900)]
         public void IsLeapYear_GivenNonLeapYear_ReturnsFalse(int year) {
             // Assert
-            Assert.False(ConsoleApp.Program.IsLeapYear(year));
+            Assert.False(Number.IsLeapYear(year));
         }
     }
 }
